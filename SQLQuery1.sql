@@ -1,0 +1,28 @@
+
+CREATE DATABASE SimpleAppDB;
+GO
+
+
+USE SimpleAppDB;
+GO
+
+
+CREATE TABLE Items (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(100) NOT NULL,
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+GO
+
+
+INSERT INTO Items (Name) VALUES ('Item inicial');
+INSERT INTO Items (Name) VALUES ('Segundo item');
+GO
+
+
+CREATE TABLE Logs (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Message NVARCHAR(255),
+    LogDate DATETIME DEFAULT GETDATE()
+);
+GO

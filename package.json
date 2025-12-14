@@ -1,0 +1,23 @@
+{
+  "name": "simple-app",
+  "version": "1.0.0",
+  "description": "Aplicación web simple con frontend, backend en Node.js/Express y base de datos SQL Server",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "test": "jest --detectOpenHandles --forceExit"
+  },
+  "author": "Esteban",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mssql": "^9.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "nodemon": "^3.0.1",
+    "eslint": "^8.56.0"
+  }
+}
